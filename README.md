@@ -6,4 +6,7 @@ We have been tasked to design and develop a native android app that can be used 
 
 ## *Project files to be added once project has been graded by lecturers...*
 
-# How To Use
+# App demo
+
+<img src="readmeAssets/dogshoppe_portrait_1.gif" width="400" height="600" /> <img src="readmeAssets/dogshoppe_portrait_2.gif" width="400" height="600" /> 
+<img src="readmeAssets/dogshoppe_landscape.gif" width="600" height="350" /> 
