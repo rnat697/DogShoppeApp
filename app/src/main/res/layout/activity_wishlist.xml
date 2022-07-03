@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/orange"
+    android:orientation="vertical"
+    tools:context=".WishlistActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/darkRed"
+        android:contentDescription="@string/food_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dogshoppe_logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkRed"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/orange"
+        android:textColorHighlight="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TableRow
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkRed"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/darkRed"
+            android:contentDescription="@string/home_button"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/brown_home_icon"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/search_b3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/darkRed"
+            android:contentDescription="@string/search_button"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/brown_search_icon"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/cart_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/darkRed"
+            android:contentDescription="@string/cart_button"
+            android:cropToPadding="false"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/brown_cart"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/wishlist_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/darkRed"
+            android:contentDescription="@string/wish_button"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/orange_paw"
+            tools:ignore="ImageContrastCheck" />
+
+    </TableRow>
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foregroundGravity="center"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvWishTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Wishlist"
+                android:textColor="@color/orange"
+                android:textSize="30dp"
+                android:visibility="visible"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"/>
+
+            <ImageView
+                android:id="@+id/redPaw"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                android:contentDescription="@string/emptyWishListDescription"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/red_paw" />
+
+            <TextView
+                android:id="@+id/emptyWishListText"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/EmptyWishlist"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/darkRed"
+                android:textColorHighlight="@color/brightRed"
+                android:textSize="34sp"
+                android:visibility="gone"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/redPaw"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:layout_below="@id/tvWishTitle" />
+
+            <Button
+                android:id="@+id/btnClearWish"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvWish"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/orange"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="CLEAR ALL"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

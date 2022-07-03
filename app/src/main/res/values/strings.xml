@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">The Dog Shoppe</string>
+    <string name="food_tab">Food</string>
+    <string name="Price">Price </string>
+    <string name="toy_tab">Toys</string>
+    <string name="acc_tab">Accessories</string>
+    <string name="groom_tab">Grooming</string>
+    <string name="home_button">Home</string>
+    <string name="search_button">Search</string>
+    <string name="item_name">Item Product Name </string>
+    <string name="cart_button">Cart</string>
+    <string name="wish_button">Wish</string>
+    <string name="categories">Categories</string>
+    <string name="emptyWishListDescription">EmptyWishList</string>
+    <string name="EmptyCart">Oh no.. your cart is empty! Start shopping to fill it up!</string>
+    <string name="EmptyWishlist">Oh no.. your wishlist is empty! Start shopping to fill it up!</string>
+</resources>

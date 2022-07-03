@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivWishCartItemImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/tvWishCartItemName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/ivWishCartItemImg"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvWishCartPrice"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvWishCartItemName"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/ivWishCartItemImg"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:id="@+id/ibRemovebtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/remove_icon"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/ibCartbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/ibRemovebtn"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:srcCompat="@drawable/orange_cart" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

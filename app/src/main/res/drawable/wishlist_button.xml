@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" >
+        <bitmap android:src="@drawable/orange_paw"
+            android:tint="@color/gray"/>
+    </item>
+    <item android:drawable="@drawable/orange_paw"
+        android:state_pressed="true"/>
+</selector>
