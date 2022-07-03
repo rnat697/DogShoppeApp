@@ -6,7 +6,7 @@ We have been tasked to design and develop a native android app that can be used 
 
 # Achievements
 Our app gain first place in a class wide compentition in COMPSYS 302, 2022. 
-All students in this course are grouped in pairs and particpated in the competiton to develop a native android app that can be used to showcase/sell some products and items. Once development is done, all teams pitch and demo their application to a panel of judges. Finalist were approached to make a mobile app promotional video for class wide voting. However, we are the only team to provide the promotional video. Hence we got first place.
+All students in this course are grouped in pairs and particpated in the competiton to develop a native android app that can be used to showcase/sell some products and items. Once development is done, all teams pitch and demo their application to a panel of judges. Finalist were approached to make a mobile app promotional video for class wide voting. However, we are the only team to provide the promotional video. Hence, we got first place.
 
 # App demo
 
@@ -14,6 +14,10 @@ All students in this course are grouped in pairs and particpated in the competit
 <img src="readmeAssets/dogshoppe_landscape.gif" width="600" height="350" /> 
 
 # App Promotional Video
+
+
+
+https://user-images.githubusercontent.com/79692362/177031407-3bfd2a2a-2eb2-4de0-b137-dd35a0e2f706.mp4
 
 
 # References
